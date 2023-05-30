@@ -32,12 +32,12 @@ function Rows({ title, apiCall }: Props) {
           return (
             <div
               key={item.id}
-              className="flex group relative w-64 flex-shrink-0 hover:scale-150 hover:z-10 transition-all duration-300 cursor-pointer overflow-hidden"
+              className="flex group relative w-64 flex-shrink-0  hover:translate-x-5 hover:-translate-y-5 hover:scale-125 hover:z-10 transition-all duration-300 cursor-pointer overflow-hidden"
             >
               {/* 
                     -----------BackFace----------
                   */}
-              <div className="absolute group-hover:top-16 transition-all duration-500 top-36 bg-black/80 w-full h-full flex flex-col">
+              <div className="absolute group-hover:top-16 transition-all duration-500 top-36 bg-zinc-700/95 w-full h-full flex flex-col">
                 <div className="flex flex-row px-3 py-2 justify-between">
                   <div className="flex flex-row gap-x-4">
                     <BsPlayCircle className="w-7 h-7 hover:scale-125 transition-all duration-300 text-white" />
