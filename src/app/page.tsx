@@ -1,28 +1,22 @@
+//"use client";
 import Image from "next/image";
-import Header from "../../pages/Header";
-import Popular from "../../pages/Popular";
-import Rows from "../../pages/Rows";
-import axios from "axios";
-import Banner from "../../pages/Banner";
-import Entrance from "../../pages/Entrance";
+import Header from "../../components/Header";
+import Banner from "../../components/Banner";
+import MovieRows from "../../components/MovieRows";
+import Rows from "../../components/Rows";
+import InfoModal from "../../components/InfoModal";
+import Index from ".";
 
 export default function Home() {
   return (
-    <div className="h-full bg-[#171616]">
-      {/* <Entrance /> */}
-      <div className="fixed top-0 w-full z-50">
-        <Header />
-      </div>
-      <Banner apiCall={process.env.TRENDING_KEY} />
-      <div className="-mt-36 z-30">
-        <Rows title="Trending" apiCall={process.env.TRENDING_KEY} />
-        <Rows title="Trending" apiCall={process.env.TRENDING_KEY} />
-        <Rows title="Trending" apiCall={process.env.TRENDING_KEY} />
-        <Rows title="Trending" apiCall={process.env.TRENDING_KEY} />
-        <Rows title="Trending" apiCall={process.env.TRENDING_KEY} />
-      </div>
-    </div>
+    <>
+      {/* {visibility && <InfoModal />} */}
+      <Header />
+      <Index />
+      {/* <Banner apiCall={process.env.TRENDING_KEY} />
+      <div className="pb-60">
+        <Rows apiCall={process.env.TRENDING_KEY} title="Trending" />
+      </div> */}
+    </>
   );
 }
-/* 
-flex min-h-screen  flex-col bg-black/80 */

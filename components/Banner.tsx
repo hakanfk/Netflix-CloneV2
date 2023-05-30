@@ -21,19 +21,20 @@ function Banner({ apiCall }: Props) {
   }, [data]);
 
   return (
-    <div className="z-0 relative">
-      <div className="absolute top-[40%] left-[5%]">
-        <h2 className="text-6xl tracking-widest text-gray-900 font-extrabold">
-          {data?.results[8].original_title}
+    <div className="relative h-[50vw] ">
+      <div className="absolute top-0 right-0 h-full w-full bg-black/30" />
+      <div className="absolute top-[45%] left-[5%]">
+        <h2 className="text-6xl tracking-widest text-white shadow-xl font-extrabold">
+          {data?.results[9].original_title}
         </h2>
         <div className="w-1/2">
-          <h2 className="text-white text-start text-2xl font-bold mt-10">
-            {data?.results[8].overview}
+          <h2 className="text-white text-start text-xl font-bold mt-10">
+            {data?.results[9].overview}
           </h2>
         </div>
       </div>
       <img
-        src={`https://image.tmdb.org/t/p/original/${data?.results[8].backdrop_path}`}
+        src={`https://image.tmdb.org/t/p/original/${data?.results[9].backdrop_path}`}
         alt=""
         className="-mt-48 "
       />
