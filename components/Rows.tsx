@@ -30,7 +30,7 @@ function Rows({ title, apiCall }: Props) {
       setIsLoading(false);
     }
     getData();
-  }, [data]);
+  }, [data, apiCall]);
 
   function handleModal() {
     setVisible(false);

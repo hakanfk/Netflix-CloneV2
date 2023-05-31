@@ -10,13 +10,13 @@ type Props = {
 function InfoModal({ movie, handleModal }: Props) {
   return (
     <div
-      className="fixed h-[100vh] w-[100vw] inset-0 bg-black/80 z-50 flex flex-col justify-center items-center"
+      className="fixed h-[100vh] w-[100vw] inset-0 bg-black/80 z-50 flex flex-col justify-center items-center "
       onClick={handleModal}
     >
-      <div className="bg-zinc-900 w-[45vw] pb-12 ">
+      <div className="bg-zinc-900 w-[45vw] pb-12 rounded-xl">
         <div className="relative">
           <div
-            className="absolute top-4 right-4 w-8 h-8 flex justify-center items-center bg-black/70 hover:bg-black/90 cursor-pointer rounded-full"
+            className="absolute top-4 right-4 w-8 h-8 flex justify-center items-center bg-black/70 hover:bg-black/90 cursor-pointer rounded-full z-30"
             onClick={handleModal}
           >
             <AiOutlineClose className=" text-white" />
@@ -24,9 +24,9 @@ function InfoModal({ movie, handleModal }: Props) {
           <img
             src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
             alt=""
-            className="w-[45vw] relative"
+            className="w-[45vw] relative rounded-md"
           />
-          <div className="w-full h-12 bg-gradient-to-b from-transparent to-zinc-900 absolute bottom-0" />
+          <div className="w-full h-24 bg-gradient-to-b from-transparent to-zinc-900 absolute bottom-0" />
           <h2 className="absolute bottom-[30%] left-[7%] text-white tracking-widest w-1/2 text-4xl font-extrabold shadow-2xl">
             {movie.original_title}
           </h2>

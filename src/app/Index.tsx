@@ -8,9 +8,9 @@ function Index({}: Props) {
   return (
     <>
       <Banner apiCall={process.env.TRENDING_KEY} />
-      <div className="pb-60">
-        <Rows apiCall={process.env.TRENDING_KEY} title="Trending" />
-      </div>
+
+      <Rows apiCall={process.env.TRENDING_KEY} title="Trending" />
+      <Rows apiCall={process.env.TOPRATED_KEY} title="Top Rated" />
     </>
   );
 }
