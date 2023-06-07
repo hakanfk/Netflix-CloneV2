@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../../components/Banner";
-import Rows from "../../components/Rows";
+import Banner from "../components/Banner";
+import Rows from "../components/Rows";
 
 type Props = {};
 

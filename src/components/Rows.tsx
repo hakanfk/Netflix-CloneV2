@@ -6,7 +6,7 @@ import { AiOutlinePlusCircle } from "react-icons/ai";
 import { AiOutlineDownCircle } from "react-icons/ai";
 import { AiFillLike } from "react-icons/ai";
 import { useSelector, useDispatch } from "react-redux";
-import { openModal } from "../store/modalSlice";
+import { openModal } from "../../store/modalSlice";
 import InfoModal from "./InfoModal";
 
 type Props = {

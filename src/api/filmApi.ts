@@ -17,8 +17,7 @@ export async function getFilmDetails(movieId: number) {
     params: { language: "en-US" },
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwM2VlZDMzMTAzNThiY2VkOTg5Y2QwOWZhYzAxOWQyOCIsInN1YiI6IjYwYzk5ZTgxZjEyY2Y0MDA0MDQ0MmRlYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.pl32WcRH583SXVbvEOaOoFH8rJ1qXEB3Q0oozAIMg74",
+      Authorization: process.env.BEARER_KEY,
     },
   });
 
@@ -32,8 +31,7 @@ export async function getFilmCredits(movieId: number) {
     params: { language: "en-US" },
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwM2VlZDMzMTAzNThiY2VkOTg5Y2QwOWZhYzAxOWQyOCIsInN1YiI6IjYwYzk5ZTgxZjEyY2Y0MDA0MDQ0MmRlYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.pl32WcRH583SXVbvEOaOoFH8rJ1qXEB3Q0oozAIMg74",
+      Authorization: process.env.BEARER_KEY,
     },
   });
 

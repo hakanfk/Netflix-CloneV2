@@ -1,10 +1,10 @@
 //"use client";
 import Image from "next/image";
-import Header from "../../components/Header";
-import Banner from "../../components/Banner";
-import MovieRows from "../../components/MovieRows";
-import Rows from "../../components/Rows";
-import InfoModal from "../../components/InfoModal";
+import Header from "../components/Header";
+import Banner from "../components/Banner";
+import MovieRows from "../components/MovieRows";
+import Rows from "../components/Rows";
+import InfoModal from "../components/InfoModal";
 import Index from "./Index";
 
 export default function Home() {
