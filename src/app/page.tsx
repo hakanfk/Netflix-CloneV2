@@ -5,18 +5,19 @@ import Banner from "../../components/Banner";
 import MovieRows from "../../components/MovieRows";
 import Rows from "../../components/Rows";
 import InfoModal from "../../components/InfoModal";
-import Index from ".";
+import Index from "./Index";
 
 export default function Home() {
   return (
     <>
       {/* {visibility && <InfoModal />} */}
-      <Header />
-      <Index />
-      {/* <Banner apiCall={process.env.TRENDING_KEY} />
-      <div className="pb-60">
-        <Rows apiCall={process.env.TRENDING_KEY} title="Trending" />
-      </div> */}
+      <div className="flex md:hidden justify-center items-center text-white h-screen w-full bg-black">
+        Please Switch to a Computer. Mobil is still under development
+      </div>
+      <div className="md:flex flex-col hidden">
+        <Header />
+        <Index />
+      </div>
     </>
   );
 }

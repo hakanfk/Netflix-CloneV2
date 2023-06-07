@@ -20,14 +20,11 @@ function Rows({ title, apiCall }: Props) {
   const [movie, setMovie] = useState({});
 
   const [visible, setVisible] = useState(false);
-  const dispatch = useDispatch();
 
   useEffect(() => {
     async function getData() {
-      setIsLoading(true);
       const result = await axios.get(apiCall);
       setData(result?.data);
-      setIsLoading(false);
     }
     getData();
   }, [data, apiCall]);
@@ -53,6 +50,7 @@ function Rows({ title, apiCall }: Props) {
             <div
               key={item.id}
               className="flex group relative w-64 flex-shrink-0  hover:translate-x-5 hover:-translate-y-5 hover:scale-125 hover:z-10 transition-all duration-300 cursor-pointer overflow-hidden"
+              onClick={() => handleOpenModal(item)}
             >
               {/* 
                     -----------BackFace----------

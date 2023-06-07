@@ -1,4 +1,3 @@
-"use client";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Provider } from "react-redux";
@@ -18,9 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Provider store={store}>
-        <body className={inter.className}>{children}</body>
-      </Provider>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
